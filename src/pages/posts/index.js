@@ -17,7 +17,7 @@ function Posts() {
     });
   }, []);
 
-  console.log(posts);
+  // console.log(posts);
 
   return (
     <div className="post-page">
@@ -29,9 +29,9 @@ function Posts() {
           <h1>{user.nama}</h1>
       ))} */}
       <div className="post-container">
-        {posts.map((post) => (
-          <Card key={post.id} title={post.title} body={post.body} />
-        ))}
+      {posts?.map((post) => (
+        <Card key={post.id} title={post.title} body={post.body} id={post.id} />
+      ))}
       </div>
     </div>
   );

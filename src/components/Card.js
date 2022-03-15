@@ -1,8 +1,9 @@
 import React from "react";
 import "../App.css";
 import {useState, useEffect} from 'react'
+import { Link } from "react-router-dom";
 
-function Card({ title, body }) {
+function Card({ title, body, id }) {
   const [judul, setJudul] = useState('')
 
   useEffect(() =>{
@@ -23,6 +24,11 @@ function Card({ title, body }) {
         <p className="description">
           {body}
         </p>
+      </div>
+      <div>
+        <Link to={`detail/${id}`}>
+          <p>Link</p>
+        </Link>
       </div>
     </div>
   );
