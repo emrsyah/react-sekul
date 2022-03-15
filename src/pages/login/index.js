@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import Form from "../../Form";
 
 function Login() {
   return (
     <>
-        <h3>Login Page</h3>
+      <Form />
     </>
-  )
+  );
 }
 
-export default Login
+export default Login;
